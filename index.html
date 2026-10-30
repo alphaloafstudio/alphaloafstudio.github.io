@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Alpha Loaf Studio</title>
+<meta name="description" content="Small games with a little bite. Play Haze Run, a Singapore haze runner, free in your browser.">
+<meta name="theme-color" content="#17201f">
+<meta property="og:title" content="Alpha Loaf Studio">
+<meta property="og:description" content="Small games with a little bite. Play Haze Run free in your browser.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317201f'/%3E%3Cpath d='M12 40c0-10 8-18 20-18s20 8 20 18v4H12z' fill='%23f0a24e'/%3E%3Cpath d='M22 32c3-4 8-6 12-5' stroke='%23f4ead6' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+:root{--ink:#17201f;--panel:#1f2b2a;--cream:#f4ead6;--muted:#b8ad98;--haze:#f0a24e;--line:rgba(244,234,214,.16);color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:'Figtree',system-ui,-apple-system,sans-serif;background:var(--ink);color:var(--cream);line-height:1.5;
+  background-image:radial-gradient(circle at 78% 12%,rgba(240,162,78,.35) 0,rgba(240,162,78,.12) 9%,transparent 28%),linear-gradient(180deg,#2a3330 0,#17201f 46%);background-repeat:no-repeat;background-attachment:fixed}
+.wrap{width:min(760px,100%);margin:0 auto;padding:max(28px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(40px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
+header{display:flex;align-items:center;gap:12px;margin-bottom:56px}
+.logo{width:44px;height:44px;flex:none}
+.brand{font-family:'Bungee',Impact,'Arial Black',sans-serif;font-size:20px;letter-spacing:.02em}
+h1{font-family:'Bungee',Impact,'Arial Black',sans-serif;font-weight:400;font-size:clamp(40px,11vw,76px);line-height:.95;margin:0 0 16px;color:var(--cream);text-wrap:balance}
+h1 span{color:var(--haze)}
+.tag{font-size:clamp(17px,4.4vw,21px);color:var(--muted);margin:0 0 48px;max-width:34ch}
+h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;font-weight:800}
+.card{display:grid;gap:18px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px 20px}
+.card h3{font-family:'Bungee',Impact,'Arial Black',sans-serif;font-weight:400;font-size:clamp(28px,7vw,38px);line-height:1;margin:0;color:var(--haze)}
+.card p{margin:0;font-size:16px;max-width:52ch}
+.meta{font-size:13px;color:var(--muted);letter-spacing:.04em}
+.btn{justify-self:start;display:inline-block;text-decoration:none;border-radius:12px;padding:14px 22px;font:800 16px 'Figtree',sans-serif;background:var(--haze);color:#1d1408;box-shadow:0 4px 0 #a5621f}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #a5621f}
+.btn:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+footer{margin-top:56px;font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .1s,box-shadow .1s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1f2b2a"/><path d="M12 40c0-10 8-18 20-18s20 8 20 18v4H12z" fill="#f0a24e"/><path d="M22 32c3-4 8-6 12-5" stroke="#f4ead6" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+    <div class="brand">Alpha Loaf Studio</div>
+  </header>
+  <main>
+    <h1>Small games<br>with a <span>little bite.</span></h1>
+    <p class="tag">Quick, cheeky games you can play right in your browser. No download, no sign-up.</p>
+    <h2>Play now</h2>
+    <article class="card">
+      <h3>Haze Run</h3>
+      <p>Run from Toa Payoh to Chinatown to Marina Bay while the PSI climbs. Dodge the uncles, the aunties and the choped tables, and grab fresh air.</p>
+      <div class="meta">Free · Phone &amp; desktop · Swipe or arrow keys</div>
+      <a class="btn" href="/haze-run/">Play Haze Run</a>
+    </article>
+  </main>
+  <footer>&copy; 2026 Alpha Loaf Studio</footer>
+</div>
+</body>
+</html>
